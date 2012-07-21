@@ -12,3 +12,17 @@ q1.submit(function (ev) {
     	alert("Try again!");
     }
 });
+var q2 = $('#question2');
+q2.submit(function (ev) {
+    ev.preventDefault();
+    var theirAnswer = parseInt(q2.find('#input2').val());
+    console.log("Their answer:" + theirAnswer);
+    console.log($('#q2').text() )
+    var rightAnswer = parseInt(eval($('#q2').text()));
+    console.log("The right answer is: "+rightAnswer);
+    if (theirAnswer === rightAnswer){
+        alert("That's right!");
+    }else{
+        alert("Try again!");
+    }
+});
