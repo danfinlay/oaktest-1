@@ -1,6 +1,11 @@
+var q6= $('#question6');
+q6.hide();
+var q7 = $('#question7');
+q7.hide();
 var q1 = $('#question1');
 q1.submit(function (ev) {
     ev.preventDefault();
+
     var theirAnswer = parseInt(q1.find('#input1').val());
     console.log("Their answer:" + theirAnswer);
     console.log($('#q1').text() )
@@ -25,4 +30,14 @@ q2.submit(function (ev) {
     }else{
         alert("Try again!");
     }
+
+
+});
+
+q7.submit(function (ev) {
+    ev.preventDefault();
+    console.log(q7.find('#input1').val());
+    q4.hide();
+    q6.hide();
+
 });
