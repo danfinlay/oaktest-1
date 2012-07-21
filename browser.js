@@ -23,8 +23,8 @@ function createQuestion (n) {
     });
 }
 
-// loop over the questions from 0 through 5, inclusive
-for (var i = 0; i < 6; i++) {
+// loop over the questions from 0 through n, inclusive
+for (var i = 0; i < questions.length; i++) {
     createQuestion(i);
 }
 
