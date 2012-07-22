@@ -1,4 +1,26 @@
 body {
-    background-color: rgb(240,250,183);
+    background-color: rgb(200,250,183);
     color: rgb(80,20,120);
+    padding:20px;
+    font-family: Arial, Helvetica, Trebuchet, sans-serif;
+}
+h1{
+font-size: 65px;
+outline: 3px solid black;
+}
+.lesson{
+	font-size: 30px;
+	margin-top: 20px;
+	outline: 3px solid black;
+	padding: 10px;
+}
+.q{
+	font-size: 40px;
+}
+.answerBox{
+	margin-left: 0px auto;
+	font-size: 50px;
+}
+input{
+	font-size: 40px;
 }
