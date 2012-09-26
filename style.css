@@ -24,3 +24,17 @@ outline: 3px solid black;
 input{
 	font-size: 40px;
 }
+.bigList{
+	background-color:rgba(130,130,0,0.4);
+	padding:20px;
+	font-size:24px;
+}
+.bigList li{
+	margin:15px;
+}
+.lessonList{
+	padding:10px;
+	background-color:rgba(130,130,0,0.4);
+	display:none;
+	font-size:20px;
+}
