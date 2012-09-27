@@ -10,11 +10,9 @@ function createQuestion (n) {
         var rightAnswer = eval(qn.find('.q').text());
         console.log("The right answer is: "+rightAnswer);
         if (theirAnswer === rightAnswer){
-            qn.hide();
+            qn.hide();2/1
             if (n === questions.length - 1) {
                 alert('All correct!');
-
-                window.location.href = "002.html";
             }
             else {
                 $(questions[n+1]).show();

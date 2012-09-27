@@ -13,8 +13,7 @@ function createQuestion (n) {
             qn.hide();
             if (n === questions.length - 1) {
                 alert('All correct!');
-
-                window.location.href = "002.html";
+                window.location.href = "003.html";
             }
             else {
                 $(questions[n+1]).show();

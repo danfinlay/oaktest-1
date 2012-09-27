@@ -1,14 +1,19 @@
 body {
+	font-size: 30px;
     background-color: rgb(200,250,183);
     color: rgb(80,20,120);
     padding:20px;
     font-family: Arial, Helvetica, Trebuchet, sans-serif;
+}
+a:visited{
+	color:rgb(0,120, 0);
 }
 h1{
 font-size: 65px;
 outline: 3px solid black;
 }
 .lesson{
+	margin:10px;
 	font-size: 30px;
 	margin-top: 20px;
 	outline: 3px solid black;
@@ -18,6 +23,8 @@ outline: 3px solid black;
 	font-size: 40px;
 }
 .answerBox{
+	margin:10px;
+	padding:10px;
 	margin-left: 0px auto;
 	font-size: 50px;
 }
@@ -37,4 +44,16 @@ input{
 	background-color:rgba(130,130,0,0.4);
 	display:none;
 	font-size:20px;
+}
+.a{
+	display:none;
+}
+table{
+	font-size:40px;
+}
+th{
+	padding:10px;
+}
+td{
+	padding:10px;
 }
