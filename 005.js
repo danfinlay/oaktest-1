@@ -1,3 +1,31 @@
+function solveAbsolutes(questionText){
+    console.log("Beginning to try to solve "+questionText);
+    var answer="";
+    var startAbs=false;
+
+    for(var i = 0; i < questionText.length; i++){
+        var letter = questionText[i];
+        console.log("Letter: "+letter);
+        if(letter!=="|"){
+            console.log("This letter is not a pipe.");
+            answer=answer+letter;
+        }else{
+            if(startAbs){
+                console.log("Ending absolute.");
+                answer=answer+")";
+                startAbs=false;
+            }else{
+                console.log("Beginning absolute.");
+                answer=answer+"Math.abs(";
+                startAbs=true;
+            }
+        }
+        console.log("Answer is currently: "+answer);
+    }
+
+    return eval(answer);
+}
+
 var questions = $('.question');
 
 function createQuestion (n) {
@@ -8,10 +36,11 @@ function createQuestion (n) {
         var theirAnswer = parseInt(qn.find('.answer').val());
         console.log("Their answer:" + theirAnswer);
         console.log("Right answer text"+ qn.find('.q').text());
-        var answerText = eval(qn.find('.q').text());
-        console.log("Right answer evaluated"+eval(qn.find('.q').text()));
-        console.log("Absdolute value of it is: "+Math.abs(answerText));
-        var rightAnswer = Math.abs(answerText);
+        var answerText = qn.find('.q').text();
+        console.log("Running our algorithm on: "+answerText);
+        var answer = solveAbsolutes(answerText);
+        console.log("Right answer evaluated"+answer);
+        var rightAnswer = answer;
         console.log("The right answer is: "+rightAnswer);
         if (theirAnswer === rightAnswer){
             qn.hide();
