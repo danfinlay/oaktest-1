@@ -6,3 +6,16 @@ $('.bigList>li').click(function(event){
         $(this).next().hide();
     }
 });
+
+//Below this line are the functions that make the login box work:
+$('.login').click(function(event){
+	console.log("Login clicked.");
+	event.preventDefault();
+	$('#loginPopUp').show(300);
+})
+
+$('#cancel').click(function(event){
+	event.preventDefault();
+	console.log("Cancel Clicked.");
+	$('.popUp').hide(300);
+})
