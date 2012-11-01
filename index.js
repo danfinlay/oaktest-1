@@ -14,8 +14,14 @@ $('.login').click(function(event){
 	$('#loginPopUp').show(300);
 })
 
-$('#cancel').click(function(event){
+$('.cancel').click(function(event){
 	event.preventDefault();
 	console.log("Cancel Clicked.");
 	$('.popUp').hide(300);
+})
+
+$('.signup').click(function(event){
+	console.log("signup.");
+	event.preventDefault();
+	$('#signupPopUp').show(300);
 })
