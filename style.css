@@ -142,6 +142,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcff68', end
 	padding:10px;
 	display:none;
 }
+.popUp input{font-size:75% }
 #forgot{
 	font-size: 24px;
 }
